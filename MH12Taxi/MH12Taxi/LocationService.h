@@ -1,5 +1,5 @@
 #include <string>
-
+#include "ILocationService.h"
 // x, y coordinates of location on map
 class Location
 {
@@ -9,7 +9,7 @@ public:
 };
 
 
-class LocationService
+class LocationService : ILocationService
 {
 private:
   /* data */
