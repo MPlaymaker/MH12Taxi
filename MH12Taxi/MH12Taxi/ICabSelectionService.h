@@ -38,7 +38,10 @@ public:
         if (availableCabs.empty())
             return nullptr;
         else
+        {
+            availableCabs[0].setStatus("Allotted");
             return availableCabs[0];
+        }
     }
     
     ~PuneriCabSelectionService()
