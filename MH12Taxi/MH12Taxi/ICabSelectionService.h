@@ -32,7 +32,7 @@ public:
 
     ICab* SelectCab(std::string ctype)
     {
-        vector<ICab*>availableCabs = cabDB->getCabs(ctype);
+        std::vector<ICab*>availableCabs = cabDB->getCabs(ctype);
 
         //TODO: Processing on the basis of selection
         if (availableCabs.empty())
