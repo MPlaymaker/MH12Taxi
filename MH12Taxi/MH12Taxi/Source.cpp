@@ -14,11 +14,14 @@ int main()
 	TripManager tripMgrObj;
 
 	//location
-	tripMgrObj.invokeLocationService();
+	tripMgrObj.processLocationService();
 
 	//Select cab
+	tripMgrObj.processCabSelection();
 
 	//Billing
+	tripMgrObj.processBilling();
 
 	//Payment
+	tripMgrObj.processPayment();
 }
