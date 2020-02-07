@@ -4,5 +4,8 @@ class TripManager
 public:
 	TripManager();
 	~TripManager();
+
+	void invokeLocationService();
+	
 };
 
