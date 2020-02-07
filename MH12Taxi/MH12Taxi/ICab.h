@@ -5,6 +5,7 @@ class ICab
 protected:
     std::string regNumber;
     std::string cabtype;
+    std::string status {};
 
 public:
     virtual double getBaseRate() = 0;
@@ -13,4 +14,5 @@ public:
     std::string getRegistrationNo() { return regNumber; }
     std::string getCabType() { return cabtype; }
     virtual ~ICab(){}
+    void setStatus(std::string arg){status = arg;}
 };
