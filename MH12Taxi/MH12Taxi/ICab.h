@@ -12,4 +12,5 @@ public:
     virtual double getPerHrate() = 0;
     std::string getRegistrationNo() { return regNumber; }
     std::string getCabType() { return cabtype; }
+    virtual ~ICab(){}
 };
