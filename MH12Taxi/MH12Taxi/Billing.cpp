@@ -4,6 +4,11 @@ double parseSring(string Time)
     // To be implemented
     return 0;
 }
+
+Bill::Bill() :fare(0), status("Not Paid"), penalty(0)
+{
+}
+
 Bill* BillingService::calculateFare(Trip& trip, ILocationService* locser)
 {
     Bill* obj = new Bill();
