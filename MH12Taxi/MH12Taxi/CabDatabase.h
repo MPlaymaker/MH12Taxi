@@ -1,15 +1,14 @@
 #pragma once
 #include <vector>
 #include <string>
+#include "ICab.h"
 
-class ICab;
 class CabDatabase
 {
 private:
     std::vector<ICab*> allCabs;
 public:
     CabDatabase() : allCabs({}) {}
-    std::vector<ICab*> getCabs(std::string ctype);
     void InsertCab(ICab* cabObj)
     {
         allCabs.push_back(cabObj);
