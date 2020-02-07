@@ -40,4 +40,9 @@ public:
         else
             return availableCabs[0];
     }
+    
+    ~PuneriCabSelectionService()
+    {
+        delete carDB;
+    }
 };
