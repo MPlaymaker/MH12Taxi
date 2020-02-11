@@ -1,12 +1,12 @@
 #pragma once
 class Payment;
+class IPaymentMethod;
 
-
-enum class PaymentMethod { Cash, Cashless };
 
 class IPaymentService
 {
-	virtual Payment* createPayment() = 0;
+public:
+	virtual Payment* createPayment(IPaymentMethod* method) = 0;
 	virtual ~IPaymentService() = default;
 };
 
