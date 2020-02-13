@@ -2,6 +2,7 @@ import QtQuick 2.12
 import QtQuick.Controls 2.5
 import EventHandler 1.0
 
+
 ApplicationWindow {
     visible: true
     width: 640
@@ -25,6 +26,10 @@ ApplicationWindow {
         }
 
         Page2Form {
+            comboBox.onCurrentIndexChanged: {
+
+            }
+
             button.onClicked: {
                 eventhandler.searchCabs(pickupLoc.text, dropLoc.text)
             }

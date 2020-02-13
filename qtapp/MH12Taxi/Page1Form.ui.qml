@@ -40,4 +40,12 @@ Page {
         y: 157
         placeholderText: "password"
     }
+
+    MouseArea {
+        id: mouseArea
+        x: 236
+        y: 98
+        width: 100
+        height: 100
+    }
 }

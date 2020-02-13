@@ -4,10 +4,12 @@ import QtQuick.Controls 2.5
 Page {
     width: 600
     height: 400
+    property alias comboBox: comboBox
     property alias button: button
     property alias button1: button1
     property alias pickupLoc: pickupLoc
     property alias dropLoc: dropLoc
+    property alias cbItems: cbItems
 
     header: Label {
         text: qsTr("Book a Cab")
@@ -59,6 +61,11 @@ Page {
         width: 200
         height: 40
         editable: false
+
+        objectName: "comboBox"
+        model: ListModel {
+            id: cbItems
+        }
     }
 
     Text {

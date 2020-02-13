@@ -17,3 +17,19 @@ signals:
 };
 
 #endif // EVENTHANDLER_H
+
+/*
+class ComboboxUpdate:public  QObject
+{
+    Q_OBJECT
+    Q_PROPERTY(QList<QObject*> comboList READ comboList)
+
+public:
+
+    ComboboxUpdate(QObject *parent = 0);
+
+
+    const QList<QObject*> comboList();
+    void setComboList( const QList<QObject*> &comboList);
+};
+*/
