@@ -3,6 +3,7 @@
 #include <string>
 #include "ICab.h"
 
+class Location;
 class CabDatabase
 {
 private:
@@ -32,5 +33,20 @@ public:
         }
 
         return specificCabs;
+    }
+    
+    std::vector<std::string> getCabTypes(Location* loc)
+    {
+        std::vector<std::string> types;
+
+        for (auto itr : allCabs)
+        {
+            if (std::find(types.begin(), types.end(), itr->getCabType()) != types.end())
+            {
+                types.push_back(itr->getCabType());
+            }
+        }
+
+        return types;
     }
 };
