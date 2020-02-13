@@ -4,7 +4,10 @@ import QtQuick.Controls 2.5
 Page {
     width: 600
     height: 400
+    property alias button: button
     property alias button1: button1
+    property alias pickupLoc: pickupLoc
+    property alias dropLoc: dropLoc
 
     header: Label {
         text: qsTr("Book a Cab")
@@ -13,14 +16,14 @@ Page {
     }
 
     TextField {
-        id: textField
+        id: pickupLoc
         x: 161
         y: 27
         placeholderText: "pickup location"
     }
 
     TextField {
-        id: textField1
+        id: dropLoc
         x: 161
         y: 73
         placeholderText: "drop location"

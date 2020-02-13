@@ -4,9 +4,10 @@ import QtQuick.Controls 2.5
 Page {
     width: 600
     height: 400
+    property alias button2: button2
 
     header: Label {
-        text: qsTr("Pay for ride")
+        text: qsTr("Request Cab")
         font.pixelSize: Qt.application.font.pixelSize * 2
         padding: 10
     }
@@ -40,7 +41,7 @@ Page {
         id: button1
         x: 261
         y: 284
-        text: qsTr("Book")
+        text: qsTr("Pay")
     }
 
     ComboBox {
@@ -56,5 +57,12 @@ Page {
         width: 172
         height: 109
         placeholderText: "Cab number:\\nDriver number:\\nPickup Time:\\nDrop Time\\nTotal fare:"
+    }
+
+    Button {
+        id: button2
+        x: 22
+        y: 284
+        text: qsTr("Back")
     }
 }

@@ -10,6 +10,7 @@ public:
     explicit EventHandler(QObject *parent = nullptr);
 
     Q_INVOKABLE void loginClicked(QString txt);
+    Q_INVOKABLE void searchCabs(QString pickup, QString drop);
 
 signals:
 

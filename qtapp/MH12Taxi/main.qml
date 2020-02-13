@@ -25,13 +25,18 @@ ApplicationWindow {
         }
 
         Page2Form {
+            button.onClicked: {
+                eventhandler.searchCabs(pickupLoc.text, dropLoc.text)
+            }
             button1.onClicked: {
                 swipeView.incrementCurrentIndex()
             }
         }
 
         Page3Form {
-
+            button2.onClicked: {
+                swipeView.decrementCurrentIndex()
+            }
         }
     }
 
